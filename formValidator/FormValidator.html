@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form-container" >
+    <form id="form" novalidate>
+        <h2>Register</h2>
+        <div class="normal-input">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <small>Error message</small>
+        </div>
+        <div class="normal-input">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <small>Error message</small>
+        </div>
+        <div class="normal-input">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <small>Error message</small>
+
+        </div>
+        <div class="normal-input">
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            <small>Error message</small>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

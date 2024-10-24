@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img class="money-img" src="img/money.png" alt="money logo">
+    <h2>Exchange Rate Calculator</h2>
+    <p>Choose the currency and the amounts to get the exchange rate</p>
+
+    <div class="container">
+      <div class="currency">
+        <select id="moneyType-1" class="selector">
+          <option value="CNY">CNY</option>
+          <option value="USD" selected>USD</option>
+          <option value="AED">AED</option>
+          <option value="ARS">ARS</option>
+          <option value="AUD">AUD</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <input type="number" placeholder="0" id="input_1">
+      </div>
+
+      <div class="swap-rate-container">
+        <button class="btn" id="button_swap">Swap</button>
+        <div class="rate" id="rateShow">1 USD = 0.896 EUR</div>
+      </div>
+
+      <div class="currency">
+        <select id="moneyType-2" class="selector">
+          <option value="CNY" selected>CNY</option>
+          <option value="USD">USD</option>
+          <option value="AED">AED</option>
+          <option value="ARS">ARS</option>
+          <option value="AUD">AUD</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <input type="number" placeholder="0" id="input_2">
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
